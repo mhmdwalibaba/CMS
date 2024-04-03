@@ -64,6 +64,12 @@
     <Compile Include="Models\PageComment.cs" />
     <Compile Include="Models\PageGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repasitory\IPageCommentRepasitory.cs" />
+    <Compile Include="Repasitory\IPageGroupRepasitorycs.cs" />
+    <Compile Include="Repasitory\IPageRepasitory.cs" />
+    <Compile Include="Services\PageCommentRepasitory.cs" />
+    <Compile Include="Services\PageGroupRepasitory.cs" />
+    <Compile Include="Services\PageRepasitory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -74,6 +80,7 @@
       <DependentUpon>202404031128379_add-InitialDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
