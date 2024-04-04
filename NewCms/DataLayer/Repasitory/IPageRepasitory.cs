@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public interface IPageRepasitory
+    public interface IPageRepasitory:IDisposable
     {
         IEnumerable<Page> GetAllPage();
         Page GetPageById(int pageId);   

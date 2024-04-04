@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class PageGroupRepasitory : IPageGroupRepasitorycs
+    public class PageGroupRepasitory : IPageGroupRepasitory
     {
         NCmsContext db;
         public PageGroupRepasitory(NCmsContext db)
@@ -85,6 +85,9 @@ namespace DataLayer
             db.SaveChanges();
         }
 
-       
+        public void Dispose()
+        {
+            db.Dispose();
+        }
     }
 }

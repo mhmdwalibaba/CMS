@@ -82,3 +82,5 @@ C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\NewCms\bin\EntityFramework.dll
 C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\NewCms\bin\DataLayer.pdb
 C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\NewCms\bin\DataLayer.dll.config
 C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\NewCms\bin\EntityFramework.xml
+C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\NewCms\bin\EntityFramework.SqlServer.dll
+C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\NewCms\bin\EntityFramework.SqlServer.xml
