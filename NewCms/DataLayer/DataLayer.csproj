@@ -70,6 +70,7 @@
     <Compile Include="Services\PageCommentRepasitory.cs" />
     <Compile Include="Services\PageGroupRepasitory.cs" />
     <Compile Include="Services\PageRepasitory.cs" />
+    <Compile Include="ViewModels\ShowGroupTitleAndPageCount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

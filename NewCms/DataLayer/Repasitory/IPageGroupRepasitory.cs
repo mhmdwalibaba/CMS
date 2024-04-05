@@ -14,6 +14,7 @@ namespace DataLayer
         bool UpdatePageGroup(PageGroup pageGroup);
         bool DeletePageGroup(int pageGroupId); 
         bool DeletePageGroup(PageGroup pageGroup);
+        IEnumerable<ShowGroupTitleAndPageCount> GetPageGroupTitleAndPageCount();
         void Save();
 
     }

@@ -78,7 +78,15 @@ namespace DataLayer
             }
         }
 
-        
+          public IEnumerable<ShowGroupTitleAndPageCount> GetPageGroupTitleAndPageCount()
+        {
+            return db.pageGroups.Select(p => new ShowGroupTitleAndPageCount
+            {
+                GroupID = p.GroupID,
+                GroupTitle = p.GroupTitle,
+                PageCount = p.Pages.Count()
+            });
+        }
 
         public void Save()
         {
@@ -89,5 +97,7 @@ namespace DataLayer
         {
             db.Dispose();
         }
+
+      
     }
 }

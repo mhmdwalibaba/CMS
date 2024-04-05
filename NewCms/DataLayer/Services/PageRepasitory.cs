@@ -86,6 +86,10 @@ namespace DataLayer
                 return false;
             }
         }
+        public IEnumerable<Page> GetPageMaxVisted(int take = 4)
+        {
+            return db.pages.OrderByDescending(p=>p.Visit).Take(take);
+        }
         public void Save()
         {
             db.SaveChanges();
@@ -95,5 +99,7 @@ namespace DataLayer
         {
             db.Dispose();
         }
+
+       
     }
 }
