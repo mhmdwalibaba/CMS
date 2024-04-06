@@ -3,7 +3,7 @@
 <ul>
     @foreach (var item in Model)
     {
-        <li><a href=""> @item.GroupTitle  <span>@item.PageCount</span></a></li>
+        <li><a href="/Group/@item.GroupTitle/@item.GroupID"> @item.GroupTitle  <span>@item.PageCount</span></a></li>
     }
 
 </ul>

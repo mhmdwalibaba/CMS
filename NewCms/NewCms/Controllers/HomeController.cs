@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataLayer;
+using DataLayer.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,13 @@ namespace NewCms.Controllers
 {
     public class HomeController : Controller
     {
+        NCmsContext db = new NCmsContext();
+        IPageRepasitory pageRepasitory;
+
+        public HomeController()
+        {
+            pageRepasitory = new PageRepasitory(db);
+        }
         public ActionResult Index()
         {
             return View();
@@ -25,6 +34,10 @@ namespace NewCms.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        public ActionResult ShowNewsInSlider()
+        {
+            return PartialView(pageRepasitory.GetPageInSlider());
         }
     }
 }

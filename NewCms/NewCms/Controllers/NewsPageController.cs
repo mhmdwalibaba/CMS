@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Razor.Generator;
 
 namespace NewCms.Controllers
 {
@@ -31,6 +32,21 @@ namespace NewCms.Controllers
         public ActionResult ShowNewsMaxVisit()
         {
             return PartialView(pageRepasitory.GetPageMaxVisted());
+        }
+        public ActionResult ShowLatesNews()
+        {
+            return PartialView(pageRepasitory.GetLatesPage());
+        }
+        public ActionResult ArchiveNews()
+        {
+            return PartialView(pageRepasitory.GetAllPage());
+        }
+
+        [Route("Group/{title}/{id}")]
+        public ActionResult ShowNewsPageByGroupId(string title,int id)
+        {
+            ViewBag.name=title;
+            return View(pageRepasitory.GetPageByGroupId(id));
         }
     }
 }

@@ -46,7 +46,7 @@ namespace DataLayer
 
             try
             {
-                db.Entry(page).State=EntityState.Modified;
+                db.Entry(page).State = EntityState.Modified;
                 return true;
             }
             catch (Exception)
@@ -77,7 +77,7 @@ namespace DataLayer
 
             try
             {
-                db.Entry(page).State =EntityState.Deleted;
+                db.Entry(page).State = EntityState.Deleted;
                 return true;
             }
             catch (Exception)
@@ -88,8 +88,23 @@ namespace DataLayer
         }
         public IEnumerable<Page> GetPageMaxVisted(int take = 4)
         {
-            return db.pages.OrderByDescending(p=>p.Visit).Take(take);
+            return db.pages.OrderByDescending(p => p.Visit).Take(take);
         }
+
+        public IEnumerable<Page> GetPageInSlider()
+        {
+            return db.pages.Where(prop => prop.showInslider == true);
+        }
+
+        public IEnumerable<Page> GetLatesPage(int take = 4)
+        {
+            return db.pages.OrderByDescending(p => p.CreateDate).Take(take);
+        }
+        public IEnumerable<Page> GetPageByGroupId(int GroupId)
+        {
+            return db.pages.Where(p => p.GroupID == GroupId);
+        }
+
         public void Save()
         {
             db.SaveChanges();
@@ -99,7 +114,6 @@ namespace DataLayer
         {
             db.Dispose();
         }
-
-       
     }
+      
 }

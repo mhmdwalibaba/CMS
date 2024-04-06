@@ -15,6 +15,9 @@ namespace DataLayer
         bool DeletePage(int pageId);
         bool DeletePage(Page page);
         IEnumerable<Page> GetPageMaxVisted(int take = 4);
+        IEnumerable<Page> GetPageInSlider();
+        IEnumerable<Page> GetLatesPage(int take=4);
+        IEnumerable<Page> GetPageByGroupId(int GroupId);
         void Save();
 
     }

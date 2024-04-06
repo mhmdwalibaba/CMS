@@ -1,0 +1,16 @@
+﻿@model IEnumerable<DataLayer.Page>
+
+@foreach (var Item in Model)
+{
+    <div class="item">
+        <img src="~/Images/@Item.ImageName">
+        <div class="left-side">
+            <h2> <a href="">@Item.Title</a> </h2>
+            <p>
+                @Item.ShortDescription
+            </p>
+            <span> <i class="fa fa-calendar"></i> انتشار : @Item.CreateDate.Toshamsi()</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+}

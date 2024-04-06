@@ -226,6 +226,9 @@
     <Content Include="Views\NewsPage\ShowNewsGroup.cshtml" />
     <Content Include="Views\NewsPage\ShowGroupTitleInMeno.cshtml" />
     <Content Include="Views\NewsPage\ShowNewsMaxVisit.cshtml" />
+    <Content Include="Views\Home\ShowNewsInSlider.cshtml" />
+    <Content Include="Views\NewsPage\ShowLatesNews.cshtml" />
+    <Content Include="Views\NewsPage\ShowNewsPageByGroupId.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
