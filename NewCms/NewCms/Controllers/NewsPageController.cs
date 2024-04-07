@@ -2,6 +2,7 @@
 using DataLayer.Context;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Security;
 using System.Web;
@@ -15,10 +16,12 @@ namespace NewCms.Controllers
         NCmsContext db = new NCmsContext();
         IPageGroupRepasitory pageGroupRepasitory;
         IPageRepasitory pageRepasitory;
+        IPageCommentRepasitory commentRepasitory;
         public NewsPageController()
         {
             pageGroupRepasitory = new PageGroupRepasitory(db);
             pageRepasitory = new PageRepasitory(db);
+            commentRepasitory = new PageCommentRepasitory(db);
         }
         // GET: NewsPage
         public ActionResult ShowNewsGroup()
@@ -39,7 +42,7 @@ namespace NewCms.Controllers
         }
         public ActionResult ArchiveNews()
         {
-            return PartialView(pageRepasitory.GetAllPage());
+            return View(pageRepasitory.GetAllPage());
         }
 
         [Route("Group/{title}/{id}")]
@@ -47,6 +50,39 @@ namespace NewCms.Controllers
         {
             ViewBag.name=title;
             return View(pageRepasitory.GetPageByGroupId(id));
+        }
+        [Route("News/{id}")]
+        public ActionResult ShowPageNews(int id)
+        {
+            var page = pageRepasitory.GetPageById(id);
+            if (page == null)
+            {
+               return HttpNotFound();
+            }
+            page.Visit += 1;
+            pageRepasitory.UpdatePage(page);
+            pageRepasitory.Save();
+            return View(page);
+        }
+
+        public ActionResult AddComment(int id, string name, string email, string comment)
+        {
+            PageComment addComment = new PageComment()
+            {
+                PageID = id,
+                Name=name,
+                Email=email,
+                CommentText=comment,
+                CreatedDate=DateTime.Now
+
+             };
+            commentRepasitory.AddComment(addComment);
+            
+            return PartialView("ShowComment", commentRepasitory.GetCommentByPageId(id)); 
+        }
+        public ActionResult ShowComment(int id)
+        {
+            return PartialView(commentRepasitory.GetCommentByPageId(id));
         }
     }
 }

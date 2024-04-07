@@ -229,6 +229,8 @@
     <Content Include="Views\Home\ShowNewsInSlider.cshtml" />
     <Content Include="Views\NewsPage\ShowLatesNews.cshtml" />
     <Content Include="Views\NewsPage\ShowNewsPageByGroupId.cshtml" />
+    <Content Include="Views\NewsPage\ShowPageNews.cshtml" />
+    <Content Include="Views\NewsPage\ShowComment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
