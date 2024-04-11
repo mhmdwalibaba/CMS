@@ -114,6 +114,11 @@ namespace DataLayer
         {
             db.Dispose();
         }
+
+        public IEnumerable<Page> Search(string q)
+        {
+            return db.pages.Where(p => p.Title.Contains(q) || p.Tags.Contains(q) || p.Text.Contains(q) || p.ShortDescription.Contains(q));
+        }
     }
       
 }

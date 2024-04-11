@@ -18,6 +18,7 @@ namespace DataLayer
         IEnumerable<Page> GetPageInSlider();
         IEnumerable<Page> GetLatesPage(int take=4);
         IEnumerable<Page> GetPageByGroupId(int GroupId);
+        IEnumerable<Page> Search(string q);
         void Save();
 
     }

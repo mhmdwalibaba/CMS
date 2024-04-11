@@ -26,13 +26,13 @@
     <a href=""> کلمات کلیدی </a>
     @foreach (var item in Model.Tags.Split(','))
     {
-        <a href=""> @item</a>
+        <a href="/Search?q=@item"> @item</a>
     }
 </div>
 
 
 <section class="comment-layer">
-    <header> <i class="fa fa-comments"></i><h5> دیدگاه کاربران </h5><span>  دیدگاه </span> </header>
+    <header> <i class="fa fa-comments"></i><h5> دیدگاه کاربران </h5><span> دیدگاه </span> </header>
     <ul id="commentList">
         @Html.Action("ShowComment")
     </ul>
@@ -51,7 +51,7 @@
 <script>
     function addComment() {
         $.ajax({
-            url: "/NewPage/AddComment/" + @Model.PageID,
+            url: "/NewsPage/AddComment/" + @Model.PageID,
             type: "Get",
             data: { name: $("#txtName").val(), email: $("#txtEmail").val(), comment: $("#txtComment").val() }
         }).done(function(result) {

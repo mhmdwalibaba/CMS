@@ -133,6 +133,7 @@
     <Compile Include="Classes\ConvertorToPersianDate.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsPageController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -231,6 +232,7 @@
     <Content Include="Views\NewsPage\ShowNewsPageByGroupId.cshtml" />
     <Content Include="Views\NewsPage\ShowPageNews.cshtml" />
     <Content Include="Views\NewsPage\ShowComment.cshtml" />
+    <Content Include="Views\Search\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
