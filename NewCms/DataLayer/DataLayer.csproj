@@ -59,17 +59,25 @@
     <Compile Include="Migrations\202404031128379_add-InitialDb.designer.cs">
       <DependentUpon>202404031128379_add-InitialDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404121546037_addLogin.cs" />
+    <Compile Include="Migrations\202404121546037_addLogin.designer.cs">
+      <DependentUpon>202404121546037_addLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\PageComment.cs" />
     <Compile Include="Models\PageGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repasitory\ILoginRepasitory.cs" />
     <Compile Include="Repasitory\IPageCommentRepasitory.cs" />
     <Compile Include="Repasitory\IPageGroupRepasitory.cs" />
     <Compile Include="Repasitory\IPageRepasitory.cs" />
+    <Compile Include="Services\LoginRepasitory.cs" />
     <Compile Include="Services\PageCommentRepasitory.cs" />
     <Compile Include="Services\PageGroupRepasitory.cs" />
     <Compile Include="Services\PageRepasitory.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\ShowGroupTitleAndPageCount.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +87,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202404031128379_add-InitialDb.resx">
       <DependentUpon>202404031128379_add-InitialDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404121546037_addLogin.resx">
+      <DependentUpon>202404121546037_addLogin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

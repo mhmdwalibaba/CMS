@@ -13,6 +13,10 @@ namespace DataLayer.Context
         public DbSet<Page> pages { get; set; }
 
         public DbSet<PageComment> pageComments { get; set; }
+
+        public DbSet<Login> logins { get; set; }
+
+        public System.Data.Entity.DbSet<DataLayer.LoginViewModel> LoginViewModels { get; set; }
     }
 
 }

@@ -1,0 +1,53 @@
+[33mcommit 741a442fcb2737709b76c3299959280aa6d01b3a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Mohammad <101342529+mhmdwalibaba@users.noreply.github.com>
+Date:   Thu Apr 11 11:54:22 2024 +0330
+
+    add Search Controller for Search in page
+
+[33mcommit 36f1e72b34e0601c46be2a9103ca3b9719fe1316[m
+Author: Mohammad <101342529+mhmdwalibaba@users.noreply.github.com>
+Date:   Sun Apr 7 21:09:26 2024 +0330
+
+    add in Pagecontroller,Action for add comment ,show commetnt,Show page News,submit comment with ajax
+
+[33mcommit 3ca2de05e3caa01e086c6056538fd88d878a411d[m
+Author: Mohammad <101342529+mhmdwalibaba@users.noreply.github.com>
+Date:   Sat Apr 6 16:33:18 2024 +0330
+
+    add Action In Controller Home for ShowSlider ,Controller PageNews add Actions for click GroupTitle for Show ArchiveNews ,actions Topnews for Show topNews
+
+[33mcommit b2b20e881d780dad205c229cd68788cd70ba5eb7[m
+Author: Mohammad <101342529+mhmdwalibaba@users.noreply.github.com>
+Date:   Sat Apr 6 02:23:15 2024 +0330
+
+    Create NewsPageController for show and dynamic NewsPage ,added Actions for ShowGroupTitleInMenu &&ShowGroupTitleAndPageCount && maxVisitedNews'
+
+[33mcommit d4d1fdf5c2221b350f34025403fca985aaef60cc[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Mohammad <101342529+mhmdwalibaba@users.noreply.github.com>
+Date:   Fri Apr 5 02:24:08 2024 +0330
+
+    add a pageController in Admin && add a folder images for SaveImage in folder
+
+[33mcommit 8273cb7b7bc7a796542690e2389d1d379fa80fda[m
+Author: Mohammad <101342529+mhmdwalibaba@users.noreply.github.com>
+Date:   Thu Apr 4 20:46:39 2024 +0330
+
+    Create Admin ,PageGroup Controller for Edit,Create,Delete PageGroups
+
+[33mcommit 18c52761446389ac6f953317eca49abc58529937[m
+Author: Mohammad <101342529+mhmdwalibaba@users.noreply.github.com>
+Date:   Wed Apr 3 15:38:28 2024 +0330
+
+    add a folder Repasitory to DataLayer for Managment Query to DataBase
+
+[33mcommit 4fae7eb6a6324efa055ab7032073a8dd44169f6e[m
+Author: Mohammad <101342529+mhmdwalibaba@users.noreply.github.com>
+Date:   Wed Apr 3 15:01:46 2024 +0330
+
+    add a datalayer for db in project and create Model
+
+[33mcommit 8ed2a98321300944e3f0ebac2ea9e7e5b453ad9c[m
+Author: Mohammad <101342529+mhmdwalibaba@users.noreply.github.com>
+Date:   Wed Apr 3 14:29:04 2024 +0330
+
+    add UI for Site

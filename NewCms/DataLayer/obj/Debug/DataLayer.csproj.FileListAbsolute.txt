@@ -24,3 +24,4 @@ C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\DataLayer\obj\Debug\DataLayer.dl
 C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\DataLayer\obj\Debug\DataLayer.pdb
 C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\DataLayer\obj\Debug\DataLayer.Migrations.addInitialDb.resources
 C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.cache
+C:\Users\Mohammad\Desktop\New folder\CMS\NewCms\DataLayer\obj\Debug\DataLayer.Migrations.addLogin.resources
