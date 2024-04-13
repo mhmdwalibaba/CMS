@@ -1,17 +1,52 @@
-﻿using System;
+﻿using DataLayer;
+using DataLayer.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Security;
+using System.Web.Security;
 
 namespace NewCms.Controllers
 {
     public class AccountController : Controller
     {
+        NCmsContext db=new NCmsContext();
+        ILoginRepasitory loginRepasitory;
+        public AccountController()
+        {
+            loginRepasitory = new LoginRepasitory(db);
+        }
         // GET: Login
        public ActionResult Login()
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Login(LoginViewModel login,string ReturnUrl="/")
+
+        {
+            if(ModelState.IsValid)
+            {
+                if (loginRepasitory.IsExitLogin(login.UserName, login.Password))
+                {
+                    FormsAuthentication.SetAuthCookie(login.UserName, login.RememberMe);
+                    return Redirect(ReturnUrl);
+                }
+                else
+                {
+                    ModelState.AddModelError("UserName", "کاربری یافت نشد");
+                }
+            }
+            return View(login);
+        }
+        public ActionResult SignOut()
+        {
+            FormsAuthentication.SignOut();
+            return Redirect("/");
+        }
+
     }
 }

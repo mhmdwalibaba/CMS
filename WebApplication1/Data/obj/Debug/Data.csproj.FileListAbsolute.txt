@@ -1,0 +1,14 @@
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\bin\Debug\Data.dll.config
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\bin\Debug\Data.dll
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\bin\Debug\Data.pdb
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\bin\Debug\EntityFramework.dll
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\bin\Debug\EntityFramework.xml
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\obj\Debug\Data.dll
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\obj\Debug\Data.pdb
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\obj\Debug\Data.Migrations.addinitial.resources
+C:\Users\Mohammad\Desktop\New folder\CMS\WebApplication1\Data\obj\Debug\Data.csproj.GenerateResource.cache

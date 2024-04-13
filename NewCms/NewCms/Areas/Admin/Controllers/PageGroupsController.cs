@@ -11,6 +11,7 @@ using DataLayer.Context;
 
 namespace NewCms.Areas.Admin.Controllers
 {
+    [Authorize]
     public class PageGroupsController : Controller
     {
         private NCmsContext db = new NCmsContext();

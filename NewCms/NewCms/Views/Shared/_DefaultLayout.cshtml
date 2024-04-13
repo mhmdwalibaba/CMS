@@ -65,11 +65,20 @@
             <span><i class="fa fa-th-list"></i></span>
             <ul>
                 <li><a href=""> صفحه اصلی </a></li>
-                <li><a href=""> ثبت نام </a></li>
-                <li><a href=""> ورود به سایت </a></li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li><a href="">  @User.Identity.Name خوش آمدید . </a></li>
+                    <li><a href="/Account/SignOut">خروج </a></li>
+                    
+                }
+                else
+                {
+                    <li><a href="/Account/Login"> ورود به سایت </a></li>
+                }
+
                 <li>
                     <span>گروه های خبری</span>
-                    @Html.Action("ShowGroupTitleInMeno","NewsPage")
+                    @Html.Action("ShowGroupTitleInMeno", "NewsPage")
                 </li>
             </ul>
         </div>

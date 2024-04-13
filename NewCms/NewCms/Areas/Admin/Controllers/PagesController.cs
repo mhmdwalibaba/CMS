@@ -14,6 +14,7 @@ using Microsoft.Ajax.Utilities;
 
 namespace NewCms.Areas.Admin.Controllers
 {
+    [Authorize]
     public class PagesController : Controller
     {
         private NCmsContext db = new NCmsContext();
